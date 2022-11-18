@@ -1,8 +1,10 @@
 import React from "react";
 import laptopWoman from "../assets/about.jpg.webp";
+import Blogs from "./blogs";
 import Courses from "./courses";
 import { Learn } from "./learn";
-
+import Pricing from "./pricing";
+import Students from "./students";
 
 const Hero = () => {
   return (
@@ -22,12 +24,12 @@ const Hero = () => {
                 <div>Benefits About Online</div>
                 <div>Learning Expertise</div>
               </div>
-              <div className="hover:bg-[#1eb2a6] mr-16 p-6 mt-7">
-                <div className="grid grid-cols-7 pl-3 pr-10 space-y-3">
+              <div className="hover:bg-[#1eb2a6] hover:drop-shadow-md mr-16 p-4 mt-7">
+                <div className="grid grid-cols-7 pl-3 pr-10 space-y-1">
                   <div className="flex justify-center items-center ">O</div>
                   <div className="col-span-6 space-y-2 pb-4">
-                    <h1>Online Courses</h1>
-                    <p>
+                    <h1 className="text-xl font-medium">Online Courses</h1>
+                    <p className="text-mb text-slate-400">
                       Far far away, behind the word mountains, far from the
                       countries Vokalia and Consonantia, there live the blind
                       texts.
@@ -36,12 +38,12 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="hover:bg-[#1eb2a6] mr-16 p-6 ">
-                <div className="grid grid-cols-7 pl-3 pr-10 space-y-3">
+              <div className="hover:bg-[#1eb2a6] hover:drop-shadow-md mr-16 p-4 mt-7">
+                <div className="grid grid-cols-7 pl-3 pr-10 space-y-1">
                   <div className="flex justify-center items-center ">O</div>
                   <div className="col-span-6 space-y-2 pb-4">
-                    <h1>Online Courses</h1>
-                    <p>
+                    <h1 className="text-xl font-medium">Online Courses</h1>
+                    <p className="text-mb text-slate-400">
                       Far far away, behind the word mountains, far from the
                       countries Vokalia and Consonantia, there live the blind
                       texts.
@@ -50,12 +52,12 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="hover:bg-[#1eb2a6] mr-16 p-6 ">
-                <div className="grid grid-cols-7 pl-3 pr-10 space-y-3">
+              <div className="hover:bg-[#1eb2a6] hover:drop-shadow-md mr-16 p-4 mt-7">
+                <div className="grid grid-cols-7 pl-3 pr-10 space-y-1">
                   <div className="flex justify-center items-center ">O</div>
                   <div className="col-span-6 space-y-2 pb-4">
-                    <h1>Online Courses</h1>
-                    <p>
+                    <h1 className="text-xl font-medium">Online Courses</h1>
+                    <p className="text-mb text-slate-400">
                       Far far away, behind the word mountains, far from the
                       countries Vokalia and Consonantia, there live the blind
                       texts.
@@ -71,12 +73,11 @@ const Hero = () => {
 
         <Learn />
         <Courses />
-
+        <Students />
+        <Blogs />
+        <Pricing />
 
         {/* layed out other components */}
-
-
-
 
         <div className="absolute top-8 left-24 right-24 bg-opacity-0 bg-slate-50 h-24  flex space-x-24">
           <div className="text-white">
@@ -106,17 +107,30 @@ const Hero = () => {
           <div>Contact</div>
         </div>
 
-        <div className="absolute top-80 left-24 right-24 bg-opacity-0 bg-slate-50 h-72">
-          <h4>WELCOME TO ACADEMIA</h4>
-          <div>Best Online Education</div>
-          <div>Expertise</div>
-          <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts.
-          </p>
+        <div className="absolute top-80 left-24 right-24 bg-opacity-0 bg-slate-50 h-72 text-white space-y-4">
+          <h4 className="text-sm font-bold  text-slate-100">
+            WELCOME TO ACADEMIA
+          </h4>
           <div>
-            <button className="bg-[#1eb2a6]">GET STARTED NOW</button>
-            <button className="bg-white">VIEW COURSE</button>
+            <div className="text-5xl font-bold ">Best Online Education</div>
+            <div className="text-5xl font-bold mb-8">Expertise</div>
+          </div>
+          <div>
+            <p className="font-medium text-lg text-slate-200">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia
+            </p>
+            <p className="font-medium text-lg text-slate-200">
+              and Consonantia, there live the blind texts.
+            </p>
+          </div>
+          <div className="space-x-1">
+            <button className="bg-[#1eb2a6] text-white px-6 py-4 rounded">
+              GET STARTED NOW
+            </button>
+            <button className="bg-white text-[#1eb2a6] px-6 py-4 rounded">
+              VIEW COURSE
+            </button>
           </div>
         </div>
       </div>
