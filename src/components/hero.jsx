@@ -26,7 +26,7 @@ const Hero = () => {
               </div>
               <div className="hover:bg-[#1eb2a6] hover:drop-shadow-md mr-16 p-4 mt-7">
                 <div className="grid grid-cols-7 pl-3 pr-10 space-y-1">
-                  <div className="flex justify-center items-center ">O</div>
+                  <div className="flex justify-center items-center">O</div>
                   <div className="col-span-6 space-y-2 pb-4">
                     <h1 className="text-xl font-medium">Online Courses</h1>
                     <p className="text-mb text-slate-400">
